@@ -9,7 +9,7 @@ export default function App() {
         style={styles.inputContainer}
       >
         <TextInput
-          placeholder="Course Goal type here"
+          placeholder="type your Course Goal"
           style={styles.textInput}
         />
         <Button title="ADD" />
@@ -19,7 +19,7 @@ export default function App() {
   );
 }
 const styles = StyleSheet.create({
-  screen: { padding: 50 },
+  screen: {padding: 50,},
   inputContainer: {
     flexDirection: "row",
     alignItems: "center",
