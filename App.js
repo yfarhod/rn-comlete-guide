@@ -14,8 +14,6 @@ export default function App() {
     setCourseGoals(currentGoals => [...currentGoals, enteredGoal]);
   }
 
-  console.log(courseGoals);
-
   return (
     <View style={styles.screen}>
       <View
@@ -31,7 +29,7 @@ export default function App() {
           onPress={addGoalHandler} />
       </View>
       <View>
-        {courseGoals.map((goal, key) => <Text>{goal}</Text>)}
+        {courseGoals.map((goal, key) => <Text key={key}>{goal}</Text>)}
       </View>
     </View>
   );
